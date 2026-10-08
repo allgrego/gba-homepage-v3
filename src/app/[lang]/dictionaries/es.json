@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "title": "GBA Logistics | Logística internacional desde Venezuela",
+    "description": "Empresa venezolana de logística integral: transporte marítimo, aéreo y terrestre, agenciamiento de aduanas, seguro de carga y asesoría. Solicita tu cotización.",
+    "ogLocale": "es_VE"
+  },
+  "utility": {
+    "location": "Caracas, Venezuela"
+  },
+  "nav": {
+    "services": "Servicios",
+    "needs": "Cómo cotizar",
+    "process": "Cómo trabajamos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "quote": "Solicitar cotización",
+    "menu": "Menú",
+    "menuAria": "Abrir o cerrar el menú",
+    "homeAria": "GBA Logistics, inicio",
+    "mainAria": "Principal",
+    "mobileAria": "Menú",
+    "languageAria": "Cambiar idioma"
+  },
+  "hero": {
+    "eyebrow": "Empresa venezolana de logística integral",
+    "titleLight": "Logística internacional que te ahorra",
+    "titleBold": "tiempo, dinero y molestias",
+    "text": "Nos ocupamos de todo: desde el retiro en fábrica hasta la entrega en tu almacén o punto de distribución. Tú te concentras en tu negocio.",
+    "primary": "Solicitar cotización",
+    "secondary": "¿Qué datos necesito enviar?",
+    "tagline": "Nuestro éxito se basa en tu éxito"
+  },
+  "quote": {
+    "title": "Cotiza tu envío",
+    "modeAria": "Modo de transporte",
+    "modes": {
+      "maritime": "Marítimo",
+      "air": "Aéreo",
+      "land": "Terrestre",
+      "multimodal": "Multimodal",
+      "unsure": "No estoy seguro"
+    },
+    "unsureLink": "¿No sabes qué modo elegir?",
+    "unsureNote": "Sin problema: cuéntanos qué envías y te recomendamos la mejor opción.",
+    "origin": "Origen",
+    "originPh": "Ciudad o país",
+    "destination": "Destino",
+    "destinationPh": "Ciudad o puerto",
+    "cargo": "¿Qué vas a enviar?",
+    "cargoPh": "Mercancía, peso y medidas aproximadas",
+    "moreOpen": "Añadir más detalles (recomendado)",
+    "moreClose": "Ocultar detalles",
+    "weight": "Peso bruto total (kg)",
+    "weightPh": "Ej.: 1200",
+    "packages": "Cantidad de bultos",
+    "packagesPh": "Cajas, pallets o piezas",
+    "dims": "Medidas por bulto",
+    "dimsPh": "Largo × ancho × alto (cm)",
+    "packaging": "Tipo de embalaje",
+    "packagingPh": "Cajas, pallets, sacos…",
+    "value": "Valor de la mercancía (USD)",
+    "valuePh": "Según factura o proforma",
+    "ready": "Fecha en que está lista",
+    "readyPh": "Fecha aproximada",
+    "modeFields": {
+      "maritime": {
+        "label": "Contenedor o volumen",
+        "placeholder": "FCL: 20', 40' o 40' HC · LCL: m³"
+      },
+      "air": {
+        "label": "Urgencia",
+        "placeholder": "Fecha límite de llegada, o sin prisa"
+      },
+      "land": {
+        "label": "Direcciones",
+        "placeholder": "Recogida y entrega, con contacto"
+      },
+      "multimodal": {
+        "label": "Tramos o modos a combinar",
+        "placeholder": "Ej.: marítimo + terrestre hasta tu almacén"
+      },
+      "unsure": {
+        "label": "Qué es más importante para ti",
+        "placeholder": "Costo, rapidez, fecha límite…"
+      }
+    },
+    "submit": "Enviar solicitud",
+    "email": "Correo electrónico",
+    "emailPh": "tu@empresa.com",
+    "clientTypeLabel": "Tipo de cliente",
+    "clientTypes": {
+      "company": "Empresa",
+      "individual": "Persona natural"
+    },
+    "name": "Nombre",
+    "namePh": "Tu nombre",
+    "company": "Empresa",
+    "companyPh": "Nombre de tu empresa",
+    "rif": "RIF (opcional)",
+    "rifPh": "J-12345678-9",
+    "phone": "Teléfono",
+    "phonePh": "Con código de país",
+    "stepLabel": "Paso",
+    "stepOf": "de",
+    "step1Title": "Tu envío",
+    "step2Title": "Tus datos",
+    "next": "Continuar",
+    "back": "Volver",
+    "notes": "¿Algo más que debamos saber? (opcional)",
+    "notesPh": "Ej.: Incoterm acordado, carga peligrosa o refrigerada, documentos que ya tienes, urgencia, servicios adicionales (aduana, seguro)…",
+    "sending": "Enviando…",
+    "consent": "Usaremos tus datos solo para responder a tu solicitud.",
+    "errors": {
+      "emailRequired": "Indica tu correo para poder responderte.",
+      "emailInvalid": "Revisa tu correo: no parece válido.",
+      "nameRequired": "Indica tu nombre.",
+      "companyRequired": "Indica el nombre de tu empresa.",
+      "phoneRequired": "Indica un teléfono de contacto.",
+      "phoneInvalid": "Revisa tu teléfono: no parece válido.",
+      "cargoRequired": "Cuéntanos brevemente qué vas a enviar.",
+      "tooFast": "Espera un momento e inténtalo de nuevo.",
+      "delivery": "No pudimos enviar tu solicitud. Inténtalo de nuevo o envíala desde tu correo.",
+      "disabled": "El formulario no está disponible en este momento. Escríbenos por correo.",
+      "fallback": "Abrir mi correo con la solicitud"
+    },
+    "maintenance": {
+      "title": "Formulario en mantenimiento",
+      "text": "Por ahora no podemos recibir solicitudes desde esta página. Escríbenos y te respondemos.",
+      "button": "Escribir por correo"
+    },
+    "success": {
+      "title": "¡Solicitud enviada!",
+      "text": "Recibimos tu solicitud y te responderemos al correo que indicaste.",
+      "again": "Enviar otra solicitud"
+    },
+    "helpBefore": "Para cotizar con precisión, ",
+    "helpLink": "mira qué datos necesitamos",
+    "helpAfter": ".",
+    "mail": {
+      "subject": "Solicitud de cotización",
+      "mode": "Modo de transporte",
+      "origin": "Origen",
+      "destination": "Destino",
+      "cargo": "Mercancía",
+      "weight": "Peso bruto total (kg)",
+      "packages": "Cantidad de bultos",
+      "dims": "Medidas por bulto (largo x ancho x alto)",
+      "packaging": "Tipo de embalaje",
+      "value": "Valor de la mercancía (USD)",
+      "ready": "Fecha en que está lista",
+      "clientType": "Tipo de cliente",
+      "name": "Nombre",
+      "company": "Empresa",
+      "rif": "RIF",
+      "phone": "Teléfono",
+      "notes": "Comentarios"
+    }
+  },
+  "benefits": {
+    "introLight": "Mientras tú te concentras en tu negocio y lo llevas a nuevos mercados,",
+    "introBold": "nosotros nos encargamos de:",
+    "items": [
+      "Agilizar tus procesos de comercio internacional y ahorrarte tiempo y dinero",
+      "Ayudarte a tomar decisiones con fundamento para mejorar tus procesos",
+      "Gestionar tu cadena de suministros con calidad y transparencia",
+      "Darte atención personalizada y de calidad en cada operación"
+    ]
+  },
+  "services": {
+    "titleLight": "Nuestros",
+    "titleBold": "Servicios",
+    "intro": "Estamos para ayudarte en todo momento, con una amplia gama de servicios que te apoyan en cada paso del proceso logístico.",
+    "logistics": {
+      "titleAccent": "Logística",
+      "titleRest": "Internacional",
+      "text": "Transportamos tu carga desde cualquier lugar del mundo hasta su destino final, de manera segura y confiable. Con alianzas estratégicas a nivel local e internacional, gestionamos importación, exportación y distribución, desde la planta hasta la entrega, de la manera más eficaz y al menor costo posible.",
+      "photoAlt": "Buque portacontenedores en puerto",
+      "kicker": "Elige cómo mover tu carga",
+      "tiles": [
+        {
+          "id": "fcl",
+          "title": "Marítimo FCL",
+          "text": "Contenedor completo para tu carga. Ideal para grandes volúmenes."
+        },
+        {
+          "id": "lcl",
+          "title": "Marítimo LCL",
+          "text": "Carga consolidada: pagas solo el espacio que ocupa tu mercancía."
+        },
+        {
+          "id": "air",
+          "title": "Aéreo",
+          "text": "Para carga urgente o de alto valor que no puede esperar."
+        },
+        {
+          "id": "land",
+          "title": "Terrestre",
+          "text": "Transporte por carretera, de la recogida a tu destino."
+        },
+        {
+          "id": "multimodal",
+          "title": "Multimodal",
+          "text": "Combinamos varios modos de transporte en una sola operación."
+        },
+        {
+          "id": "door",
+          "title": "Puerta a puerta",
+          "text": "Recogemos en origen y entregamos en tu dirección."
+        },
+        {
+          "id": "courier",
+          "title": "Courier",
+          "text": "Paquetes y envíos pequeños con entrega rápida."
+        }
+      ],
+      "ctaText": "¿No sabes cuál elegir? Te ayudamos a decidir.",
+      "ctaLink": "Solicitar cotización →"
+    },
+    "insurance": {
+      "title": "Seguro de Carga Internacional",
+      "tagline": "Más vale estar prevenidos.",
+      "text": "Integramos el seguro para el transporte de carga internacional a un precio asequible. Ofrecemos pólizas para que tu carga viaje segura y confiable, y minimizar así los riesgos de tu cadena de suministros."
+    },
+    "customs": {
+      "title": "Agenciamiento de Aduanas",
+      "text": "Llevamos los procesos legales ante la Administración Aduanera para ingresar y enviar tu mercancía. Gestionamos:",
+      "items": [
+        "Operaciones regulares",
+        "Ingreso a zona franca (In-bond)",
+        "Tránsito aduanero internacional",
+        "Cálculo de impuestos",
+        "Permisología requerida"
+      ]
+    },
+    "advisory": {
+      "title": "Asesoría Especializada",
+      "text": "Te asesoramos en tus propuestas de exportación, importación y logística internacional, con planes de trabajo personalizados. Incluye:",
+      "items": [
+        "Clasificación arancelaria",
+        "Estudios de mercado",
+        "Búsqueda de proveedores y clientes",
+        "Revisión de tus procesos logísticos y distribución"
+      ]
+    }
+  },
+  "needs": {
+    "titleLight": "¿Qué datos necesitamos para",
+    "titleBold": "cotizar tu carga?",
+    "intro": "Mientras más completa sea tu información, más rápida y precisa será la cotización. Si aún no tienes todos los datos, envíanos lo que tengas y te ayudamos a completar el resto. Son los mismos campos del formulario de arriba.",
+    "essentialsTitle": "Imprescindibles",
+    "essentials": [
+      {
+        "title": "Origen y destino",
+        "text": "Ciudad y país, y el puerto o aeropuerto si lo conoces. Para puerta a puerta, la dirección de recogida y de entrega."
+      },
+      {
+        "title": "Qué vas a enviar",
+        "text": "Descripción clara de la mercancía: qué es, de qué material está hecha y para qué se usa. Si la tienes, la partida arancelaria (código HS)."
+      },
+      {
+        "title": "Peso y cantidad de bultos",
+        "text": "Peso bruto total en kilos y número de bultos, cajas o pallets."
+      },
+      {
+        "title": "Medidas y tipo de embalaje",
+        "text": "Largo × ancho × alto de cada bulto, y si va en cajas, pallets, sacos, tambores o piezas sueltas."
+      },
+      {
+        "title": "Valor de la mercancía",
+        "text": "El valor según factura comercial o proforma (en USD). Lo usamos para el seguro y para calcular los impuestos de aduana."
+      },
+      {
+        "title": "Cuándo está lista",
+        "text": "La fecha en que el proveedor tiene la carga lista y, si hay urgencia, la fecha límite en la que la necesitas en destino."
+      }
+    ],
+    "helpfulTitle": "Nos ayudan a cotizar mejor",
+    "helpful": [
+      {
+        "title": "Condición de entrega (Incoterm)",
+        "text": "La acordada con tu proveedor: EXW, FOB, CIF u otra. Define qué parte del transporte nos toca coordinar."
+      },
+      {
+        "title": "Datos del proveedor",
+        "text": "Nombre, ubicación y contacto de quien entrega la carga, para coordinar la recogida."
+      },
+      {
+        "title": "Servicios adicionales",
+        "text": "Si necesitas agenciamiento de aduanas, seguro de carga o entrega en tu dirección, inclúyelo en la misma cotización."
+      },
+      {
+        "title": "Cargas especiales",
+        "text": "Avísanos si es peligrosa, refrigerada, frágil, sobredimensionada o de alto valor, para pedir las condiciones y documentos correctos."
+      },
+      {
+        "title": "Documentos disponibles",
+        "text": "Factura comercial o proforma, lista de empaque (packing list) y, si aplica, ficha técnica o MSDS."
+      },
+      {
+        "title": "Tus datos de contacto",
+        "text": "Nombre, empresa, RIF y teléfono. Tu correo ya lo recibimos al escribirnos."
+      }
+    ],
+    "byMode": {
+      "title": "Según el tipo de envío, añade:",
+      "intro": "Elige tu modo de transporte para ver el dato extra que cambia la tarifa.",
+      "tabsAria": "Tipo de envío",
+      "tabs": [
+        {
+          "id": "fcl",
+          "label": "Marítimo · FCL",
+          "items": [
+            {
+              "title": "Tipo y cantidad de contenedores",
+              "text": "20', 40' o 40' HC, y cuántos necesitas."
+            },
+            {
+              "title": "Peso por contenedor",
+              "text": "El peso aproximado de la carga que irá en cada uno."
+            },
+            {
+              "title": "Estado de la carga",
+              "text": "Si ya está lista para cargar en origen o hay que consolidarla antes."
+            }
+          ]
+        },
+        {
+          "id": "lcl",
+          "label": "Marítimo · LCL",
+          "items": [
+            {
+              "title": "Volumen total",
+              "text": "En metros cúbicos (m³), calculado con las medidas de cada bulto."
+            },
+            {
+              "title": "Cantidad de bultos o pallets",
+              "text": "Y si pueden apilarse unos sobre otros o no."
+            },
+            {
+              "title": "Peso bruto total",
+              "text": "En kilos, junto con el peso de los bultos más pesados."
+            }
+          ]
+        },
+        {
+          "id": "air",
+          "label": "Aéreo",
+          "items": [
+            {
+              "title": "Medidas exactas por bulto",
+              "text": "La tarifa aérea se calcula con el mayor entre el peso real y el peso volumétrico."
+            },
+            {
+              "title": "Urgencia",
+              "text": "La fecha límite de llegada, para elegir entre opciones directas o con escala."
+            },
+            {
+              "title": "Productos restringidos",
+              "text": "Avísanos si incluye baterías, líquidos, polvos o artículos regulados."
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "Terrestre",
+          "items": [
+            {
+              "title": "Direcciones exactas",
+              "text": "De recogida y de entrega, con persona de contacto en cada punto."
+            },
+            {
+              "title": "Tipo de vehículo",
+              "text": "Furgón, camión u otro, si ya sabes cuál necesita tu carga."
+            },
+            {
+              "title": "Horarios de carga y descarga",
+              "text": "Y cualquier restricción de acceso en los puntos de entrega."
+            }
+          ]
+        }
+      ]
+    },
+    "ready": {
+      "title": "¿Listo para cotizar?",
+      "text": "Completa el formulario con lo que tengas y te respondemos por correo a {email}.",
+      "button": "Ir al formulario"
+    }
+  },
+  "process": {
+    "titleLight": "De tu solicitud a la entrega,",
+    "titleBold": "en cuatro pasos",
+    "stepLabel": "Paso",
+    "steps": [
+      {
+        "title": "Nos cuentas qué envías",
+        "text": "Con los datos de arriba, por el formulario o por correo."
+      },
+      {
+        "title": "Recibes tu cotización",
+        "text": "Comparamos tarifas con transportistas y aliados, y te enviamos una propuesta clara."
+      },
+      {
+        "title": "Aprobamos y operamos",
+        "text": "Con tu visto bueno, coordinamos la recogida, el transporte y los trámites de aduana."
+      },
+      {
+        "title": "Entregamos y te informamos",
+        "text": "Te mantenemos al tanto hasta que la carga llega a su destino."
+      }
+    ]
+  },
+  "about": {
+    "titleLight": "¿Quiénes",
+    "titleBold": "somos?",
+    "p1Before": "En ",
+    "p1Strong": "GBA Logistics",
+    "p1After": " somos una empresa venezolana dedicada a prestar servicios de logística internacional, especializados en el transporte internacional de carga desde cualquier lugar del mundo.",
+    "p2Before": "Nos ocupamos de todos los aspectos de tus necesidades logísticas, desde el retiro en fábrica hasta la entrega en almacenes o puntos de distribución, para que puedas concentrarte en tu ",
+    "p2Em": "core business",
+    "p2After": ".",
+    "tagline": "Buscamos ahorrarte tiempo, dinero y molestias.",
+    "photoAlt": "Dos trabajadores se dan la mano frente a un contenedor abierto"
+  },
+  "missionVision": {
+    "mission": {
+      "kicker": "Nuestra",
+      "title": "Misión",
+      "text": "Mejorar la experiencia de los procesos logísticos por medio de un servicio confiable y de calidad."
+    },
+    "vision": {
+      "kicker": "Nuestra",
+      "title": "Visión",
+      "text": "Ser el aliado comercial por excelencia, brindando tranquilidad y seguridad en la planificación de operaciones logísticas, consolidando relaciones duraderas."
+    }
+  },
+  "contact": {
+    "kicker": "No esperes más",
+    "title": "¡Contáctanos!",
+    "text": "Envíanos un correo hoy mismo para cotizar o agendar una cita.",
+    "mailSubject": "Consulta de cotización",
+    "mailBody": "Hola, equipo de GBA Logistics:\n\nQuisiera cotizar un envío o agendar una cita.\n\nModo de transporte (marítimo, aéreo, terrestre):\nOrigen:\nDestino:\nMercancía (qué es, peso y medidas aproximadas):\n\nNombre y empresa:\nTeléfono:\n\nGracias.",
+    "mailButton": "Escríbenos por correo",
+    "dataButton": "Qué datos enviar",
+    "emailLabel": "Correo",
+    "locationLabel": "Ubicación",
+    "location": "Caracas, Venezuela"
+  },
+  "footer": {
+    "tagline": "Nuestro éxito se basa en tu éxito.",
+    "servicesTitle": "Servicios",
+    "services": [
+      "Logística internacional",
+      "Seguro de carga",
+      "Agenciamiento de aduanas",
+      "Asesoría especializada"
+    ],
+    "pageTitle": "En esta página",
+    "pageLinks": {
+      "needs": "Cómo cotizar",
+      "process": "Cómo trabajamos",
+      "about": "Quiénes somos",
+      "contact": "Contacto"
+    },
+    "legal": "GBA Logistics, C.A. © 2026. RIF: J-50138099-6"
+  }
+}

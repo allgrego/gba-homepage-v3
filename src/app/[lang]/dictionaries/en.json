@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "title": "GBA Logistics | International freight forwarding from Venezuela",
+    "description": "Venezuelan freight forwarder: ocean, air and road transport, customs brokerage, cargo insurance and advisory. Request your quote.",
+    "ogLocale": "en_US"
+  },
+  "utility": {
+    "location": "Caracas, Venezuela"
+  },
+  "nav": {
+    "services": "Services",
+    "needs": "How to quote",
+    "process": "How we work",
+    "about": "About us",
+    "contact": "Contact",
+    "quote": "Request a quote",
+    "menu": "Menu",
+    "menuAria": "Open or close the menu",
+    "homeAria": "GBA Logistics, home",
+    "mainAria": "Main",
+    "mobileAria": "Menu",
+    "languageAria": "Change language"
+  },
+  "hero": {
+    "eyebrow": "Venezuelan integrated logistics company",
+    "titleLight": "International logistics that saves you",
+    "titleBold": "time, money and hassle",
+    "text": "We take care of everything: from pickup at the factory to delivery at your warehouse or distribution point. You focus on your business.",
+    "primary": "Request a quote",
+    "secondary": "What information do I need to send?",
+    "tagline": "Our success is based on your success"
+  },
+  "quote": {
+    "title": "Quote your shipment",
+    "modeAria": "Transport mode",
+    "modes": {
+      "maritime": "Ocean",
+      "air": "Air",
+      "land": "Road",
+      "multimodal": "Multimodal",
+      "unsure": "I'm not sure"
+    },
+    "unsureLink": "Not sure which mode to choose?",
+    "unsureNote": "No problem: tell us what you're shipping and we'll recommend the best option.",
+    "origin": "Origin",
+    "originPh": "City or country",
+    "destination": "Destination",
+    "destinationPh": "City or port",
+    "cargo": "What are you shipping?",
+    "cargoPh": "Goods, approximate weight and dimensions",
+    "moreOpen": "Add more details (recommended)",
+    "moreClose": "Hide details",
+    "weight": "Total gross weight (kg)",
+    "weightPh": "E.g.: 1200",
+    "packages": "Number of packages",
+    "packagesPh": "Boxes, pallets or pieces",
+    "dims": "Dimensions per package",
+    "dimsPh": "Length × width × height (cm)",
+    "packaging": "Packaging type",
+    "packagingPh": "Boxes, pallets, sacks…",
+    "value": "Goods value (USD)",
+    "valuePh": "As per invoice or proforma",
+    "ready": "Cargo ready date",
+    "readyPh": "Approximate date",
+    "modeFields": {
+      "maritime": {
+        "label": "Container or volume",
+        "placeholder": "FCL: 20', 40' or 40' HC · LCL: m³"
+      },
+      "air": {
+        "label": "Urgency",
+        "placeholder": "Arrival deadline, or no rush"
+      },
+      "land": {
+        "label": "Addresses",
+        "placeholder": "Pickup and delivery, with contact"
+      },
+      "multimodal": {
+        "label": "Legs or modes to combine",
+        "placeholder": "E.g.: ocean + road to your warehouse"
+      },
+      "unsure": {
+        "label": "What matters most to you",
+        "placeholder": "Cost, speed, deadline…"
+      }
+    },
+    "submit": "Send request",
+    "email": "Email",
+    "emailPh": "you@company.com",
+    "clientTypeLabel": "Client type",
+    "clientTypes": {
+      "company": "Company",
+      "individual": "Individual"
+    },
+    "name": "Name",
+    "namePh": "Your name",
+    "company": "Company",
+    "companyPh": "Your company name",
+    "rif": "Tax ID / RIF (optional)",
+    "rifPh": "J-12345678-9",
+    "phone": "Phone",
+    "phonePh": "With country code",
+    "stepLabel": "Step",
+    "stepOf": "of",
+    "step1Title": "Your shipment",
+    "step2Title": "Your details",
+    "next": "Continue",
+    "back": "Back",
+    "notes": "Anything else we should know? (optional)",
+    "notesPh": "E.g.: agreed Incoterm, dangerous or refrigerated cargo, documents you already have, urgency, extra services (customs, insurance)…",
+    "sending": "Sending…",
+    "consent": "We'll only use your details to reply to your request.",
+    "errors": {
+      "emailRequired": "Enter your email so we can reply.",
+      "emailInvalid": "Check your email: it doesn't look valid.",
+      "nameRequired": "Enter your name.",
+      "companyRequired": "Enter your company name.",
+      "phoneRequired": "Enter a contact phone number.",
+      "phoneInvalid": "Check your phone number: it doesn't look valid.",
+      "cargoRequired": "Tell us briefly what you are shipping.",
+      "tooFast": "Please wait a moment and try again.",
+      "delivery": "We couldn't send your request. Try again, or send it from your email app.",
+      "disabled": "The form is not available right now. Please write to us by email.",
+      "fallback": "Open my email app with the request"
+    },
+    "maintenance": {
+      "title": "Form under maintenance",
+      "text": "We can't receive requests from this page right now. Write to us and we'll reply.",
+      "button": "Write by email"
+    },
+    "success": {
+      "title": "Request sent!",
+      "text": "We received your request and will reply to the email you provided.",
+      "again": "Send another request"
+    },
+    "helpBefore": "For an accurate quote, ",
+    "helpLink": "see what we need",
+    "helpAfter": ".",
+    "mail": {
+      "subject": "Quote request",
+      "mode": "Transport mode",
+      "origin": "Origin",
+      "destination": "Destination",
+      "cargo": "Goods",
+      "weight": "Total gross weight (kg)",
+      "packages": "Number of packages",
+      "dims": "Dimensions per package (length x width x height)",
+      "packaging": "Packaging type",
+      "value": "Goods value (USD)",
+      "ready": "Cargo ready date",
+      "clientType": "Client type",
+      "name": "Name",
+      "company": "Company",
+      "rif": "Tax ID (RIF)",
+      "phone": "Phone",
+      "notes": "Comments"
+    }
+  },
+  "benefits": {
+    "introLight": "While you focus on your business and take it to new markets,",
+    "introBold": "we take care of:",
+    "items": [
+      "Streamlining your international trade processes and saving you time and money",
+      "Helping you make informed decisions to improve your processes",
+      "Managing your supply chain with quality and transparency",
+      "Giving you personalized, high-quality attention in every operation"
+    ]
+  },
+  "services": {
+    "titleLight": "Our",
+    "titleBold": "Services",
+    "intro": "We are here to help you at every moment, with a wide range of services that support you at each step of the logistics process.",
+    "logistics": {
+      "titleAccent": "International",
+      "titleRest": "Logistics",
+      "text": "We move your cargo from anywhere in the world to its final destination, safely and reliably. With strategic local and international partnerships, we handle import, export and distribution, from the plant to the delivery, as efficiently and at the lowest cost possible.",
+      "photoAlt": "Container ship in port",
+      "kicker": "Choose how to move your cargo",
+      "tiles": [
+        {
+          "id": "fcl",
+          "title": "Ocean FCL",
+          "text": "A full container for your cargo. Ideal for large volumes."
+        },
+        {
+          "id": "lcl",
+          "title": "Ocean LCL",
+          "text": "Consolidated cargo: you only pay for the space your goods take up."
+        },
+        {
+          "id": "air",
+          "title": "Air",
+          "text": "For urgent or high-value cargo that cannot wait."
+        },
+        {
+          "id": "land",
+          "title": "Road",
+          "text": "Road transport, from pickup to your destination."
+        },
+        {
+          "id": "multimodal",
+          "title": "Multimodal",
+          "text": "We combine several transport modes in a single operation."
+        },
+        {
+          "id": "door",
+          "title": "Door to door",
+          "text": "We pick up at origin and deliver to your address."
+        },
+        {
+          "id": "courier",
+          "title": "Courier",
+          "text": "Parcels and small shipments with fast delivery."
+        }
+      ],
+      "ctaText": "Not sure which one to choose? We'll help you decide.",
+      "ctaLink": "Request a quote →"
+    },
+    "insurance": {
+      "title": "International Cargo Insurance",
+      "tagline": "Better safe than sorry.",
+      "text": "We include insurance for international cargo transport at an affordable price. We offer policies so your cargo travels safely and reliably, minimizing the risks in your supply chain."
+    },
+    "customs": {
+      "title": "Customs Brokerage",
+      "text": "We handle the legal procedures before the Customs Administration to bring in and ship out your goods. We manage:",
+      "items": [
+        "Regular operations",
+        "Free trade zone entry (In-bond)",
+        "International customs transit",
+        "Tax calculation",
+        "Required permits"
+      ]
+    },
+    "advisory": {
+      "title": "Specialized Advisory",
+      "text": "We advise you on your export, import and international logistics proposals, with personalized work plans. It includes:",
+      "items": [
+        "Tariff classification",
+        "Market studies",
+        "Supplier and customer sourcing",
+        "Review of your logistics and distribution processes"
+      ]
+    }
+  },
+  "needs": {
+    "titleLight": "What information do we need to",
+    "titleBold": "quote your cargo?",
+    "intro": "The more complete your information, the faster and more accurate the quote. If you don't have all the details yet, send us what you have and we'll help you complete the rest. These are the same fields as the form above.",
+    "essentialsTitle": "Essentials",
+    "essentials": [
+      {
+        "title": "Origin and destination",
+        "text": "City and country, and the port or airport if you know it. For door to door, the pickup and delivery addresses."
+      },
+      {
+        "title": "What you are shipping",
+        "text": "A clear description of the goods: what they are, what they are made of and what they are used for. If you have it, the tariff code (HS code)."
+      },
+      {
+        "title": "Weight and number of packages",
+        "text": "Total gross weight in kilos and the number of packages, boxes or pallets."
+      },
+      {
+        "title": "Dimensions and packaging type",
+        "text": "Length × width × height of each package, and whether it ships in boxes, pallets, sacks, drums or loose pieces."
+      },
+      {
+        "title": "Goods value",
+        "text": "The value per commercial invoice or proforma (in USD). We use it for insurance and to calculate customs taxes."
+      },
+      {
+        "title": "When it is ready",
+        "text": "The date your supplier has the cargo ready and, if it is urgent, the deadline by which you need it at destination."
+      }
+    ],
+    "helpfulTitle": "They help us quote better",
+    "helpful": [
+      {
+        "title": "Delivery terms (Incoterm)",
+        "text": "The one agreed with your supplier: EXW, FOB, CIF or another. It defines which part of the transport we coordinate."
+      },
+      {
+        "title": "Supplier details",
+        "text": "Name, location and contact of whoever hands over the cargo, so we can coordinate the pickup."
+      },
+      {
+        "title": "Additional services",
+        "text": "If you need customs brokerage, cargo insurance or delivery to your address, include it in the same quote."
+      },
+      {
+        "title": "Special cargo",
+        "text": "Let us know if it is dangerous, refrigerated, fragile, oversized or high-value, so we can request the right conditions and documents."
+      },
+      {
+        "title": "Available documents",
+        "text": "Commercial invoice or proforma, packing list and, if applicable, technical data sheet or MSDS."
+      },
+      {
+        "title": "Your contact details",
+        "text": "Name, company, tax ID (RIF) and phone number. We already receive your email address when you write to us."
+      }
+    ],
+    "byMode": {
+      "title": "Depending on the shipment type, add:",
+      "intro": "Choose your transport mode to see the extra detail that changes the rate.",
+      "tabsAria": "Shipment type",
+      "tabs": [
+        {
+          "id": "fcl",
+          "label": "Ocean · FCL",
+          "items": [
+            {
+              "title": "Container type and quantity",
+              "text": "20', 40' or 40' HC, and how many you need."
+            },
+            {
+              "title": "Weight per container",
+              "text": "The approximate weight of the cargo going in each one."
+            },
+            {
+              "title": "Cargo status",
+              "text": "Whether it is ready to load at origin or needs to be consolidated first."
+            }
+          ]
+        },
+        {
+          "id": "lcl",
+          "label": "Ocean · LCL",
+          "items": [
+            {
+              "title": "Total volume",
+              "text": "In cubic meters (m³), calculated from the dimensions of each package."
+            },
+            {
+              "title": "Number of packages or pallets",
+              "text": "And whether or not they can be stacked."
+            },
+            {
+              "title": "Total gross weight",
+              "text": "In kilos, along with the weight of the heaviest packages."
+            }
+          ]
+        },
+        {
+          "id": "air",
+          "label": "Air",
+          "items": [
+            {
+              "title": "Exact dimensions per package",
+              "text": "Air freight is charged on the greater of actual weight and volumetric weight."
+            },
+            {
+              "title": "Urgency",
+              "text": "The arrival deadline, to choose between direct and connecting options."
+            },
+            {
+              "title": "Restricted products",
+              "text": "Tell us if it includes batteries, liquids, powders or regulated items."
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "Road",
+          "items": [
+            {
+              "title": "Exact addresses",
+              "text": "For pickup and delivery, with a contact person at each point."
+            },
+            {
+              "title": "Vehicle type",
+              "text": "Van, truck or another, if you already know which one your cargo needs."
+            },
+            {
+              "title": "Loading and unloading hours",
+              "text": "And any access restrictions at the delivery points."
+            }
+          ]
+        }
+      ]
+    },
+    "ready": {
+      "title": "Ready to get a quote?",
+      "text": "Fill in the form with what you have and we'll reply by email. You can also write to {email}.",
+      "button": "Go to the form"
+    }
+  },
+  "process": {
+    "titleLight": "From your request to delivery,",
+    "titleBold": "in four steps",
+    "stepLabel": "Step",
+    "steps": [
+      {
+        "title": "You tell us what you ship",
+        "text": "With the details above, through the form or by email."
+      },
+      {
+        "title": "You receive your quote",
+        "text": "We compare rates with carriers and partners, and send you a clear proposal."
+      },
+      {
+        "title": "We approve and operate",
+        "text": "With your go-ahead, we coordinate pickup, transport and customs procedures."
+      },
+      {
+        "title": "We deliver and keep you informed",
+        "text": "We keep you posted until the cargo reaches its destination."
+      }
+    ]
+  },
+  "about": {
+    "titleLight": "Who we",
+    "titleBold": "are",
+    "p1Before": "At ",
+    "p1Strong": "GBA Logistics",
+    "p1After": " we are a Venezuelan company dedicated to international logistics services, specialized in international cargo transport from anywhere in the world.",
+    "p2Before": "We take care of every aspect of your logistics needs, from pickup at the factory to delivery at warehouses or distribution points, so you can focus on your ",
+    "p2Em": "core business",
+    "p2After": ".",
+    "tagline": "We aim to save you time, money and hassle.",
+    "photoAlt": "Two workers shaking hands in front of an open container"
+  },
+  "missionVision": {
+    "mission": {
+      "kicker": "Our",
+      "title": "Mission",
+      "text": "To improve the experience of logistics processes through a reliable, high-quality service."
+    },
+    "vision": {
+      "kicker": "Our",
+      "title": "Vision",
+      "text": "To be the business partner of choice, providing peace of mind and security in the planning of logistics operations and building lasting relationships."
+    }
+  },
+  "contact": {
+    "kicker": "Don't wait any longer",
+    "title": "Contact us!",
+    "text": "Send us an email today to get a quote or schedule a meeting.",
+    "mailSubject": "Quote request",
+    "mailBody": "Hello GBA Logistics team,\n\nI would like to get a quote for a shipment or schedule a meeting.\n\nTransport mode (ocean, air, road):\nOrigin:\nDestination:\nGoods (what they are, approximate weight and dimensions):\n\nName and company:\nPhone:\n\nThank you.",
+    "mailButton": "Email us",
+    "dataButton": "What to send",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "location": "Caracas, Venezuela"
+  },
+  "footer": {
+    "tagline": "Our success is based on your success.",
+    "servicesTitle": "Services",
+    "services": [
+      "International logistics",
+      "Cargo insurance",
+      "Customs brokerage",
+      "Specialized advisory"
+    ],
+    "pageTitle": "On this page",
+    "pageLinks": {
+      "needs": "How to quote",
+      "process": "How we work",
+      "about": "Who we are",
+      "contact": "Contact"
+    },
+    "legal": "GBA Logistics, C.A. © 2026. RIF: J-50138099-6"
+  }
+}

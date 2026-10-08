@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>GBA Logistics Inicio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.page{container-type:inline-size;font-family:'Montserrat',sans-serif;color:#3C3C3B;background:#F9F9F9;width:100%}
+.page a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:56px;align-items:center}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.menu-btn{display:none}
+.mobile-menu{display:none}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;width:52%;clip-path:polygon(20% 0,100% 0,100% 100%,0 100%)}
+.log-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:0;align-items:stretch}
+.log-photo{clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);min-height:260px;position:relative}
+.chev-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.chev{clip-path:polygon(0 0,calc(100% - 30px) 0,100% 50%,calc(100% - 30px) 100%,0 100%,30px 50%);padding:34px 56px;margin-left:-14px}
+.chev-first{clip-path:polygon(0 0,calc(100% - 30px) 0,100% 50%,calc(100% - 30px) 100%,0 100%);padding-left:32px;margin-left:0}
+.mv-wrap{display:flex}
+.mv-a{flex:1;clip-path:polygon(0 0,100% 0,calc(100% - 48px) 100%,0 100%);padding:48px 88px 48px 48px}
+.mv-b{flex:1;margin-left:-48px;clip-path:polygon(48px 0,100% 0,100% 100%,0 100%);padding:48px 48px 48px 96px}
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.page .btn:hover{filter:brightness(1.1)}
+.tile:hover{background:#355B8C}
+@container (max-width:980px){
+.hero-grid,.grid2,.log-top{grid-template-columns:minmax(0,1fr);gap:36px}
+.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid3,.spec{grid-template-columns:minmax(0,1fr)}
+.nav-links,.hdr-cta{display:none}
+.menu-btn{display:inline-flex}
+.mobile-menu{display:block}
+.hero-photo,.log-photo{display:none}
+.chev-row{grid-template-columns:minmax(0,1fr);gap:2px}
+.chev,.chev-first{clip-path:none;margin-left:0;padding:28px}
+.mv-wrap{flex-direction:column}
+.mv-a,.mv-b{clip-path:none;margin-left:0;padding:36px 28px}
+.sec{padding-top:72px !important;padding-bottom:72px !important}
+.h1{font-size:44px !important}
+.about-text{padding:64px 0 40px !important}
+.about-photo{min-height:300px !important}
+.extra{border-right:0 !important;margin-right:0 !important;padding:0 0 20px !important;margin-bottom:20px}
+}
+@container (max-width:560px){
+.grid4{grid-template-columns:minmax(0,1fr)}
+.wrap{padding:0 20px}
+.h1{font-size:34px !important}
+.h2{font-size:28px !important}
+.sec{padding-top:56px !important;padding-bottom:56px !important}
+.two{grid-template-columns:minmax(0,1fr)}
+.card-pad{padding:24px 20px !important}
+.log-pad{padding:32px 24px 24px !important}
+.log-tiles{padding:0 24px 32px !important}
+.band{padding:28px 24px !important}
+.seg{width:100% !important}
+.seg button{flex:1 1 45%}
+.util{justify-content:flex-start !important}
+}
+</style>
+</helmet>
+
+<div class="page">
+
+<!-- Utility bar -->
+<div style="background:#162C47;color:#D8E1ED;font-size:13px">
+<div class="wrap util" style="display:flex;justify-content:space-between;align-items:center;gap:6px 16px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px">
+<span>Caracas, Venezuela</span>
+<a href="mailto:sales@gbalogistic.com">sales@gbalogistic.com</a>
+</div>
+</div>
+
+<!-- Header -->
+<header style="background:#203D60;color:#fff">
+<div class="wrap" style="display:flex;justify-content:space-between;align-items:center;height:84px">
+<a href="#" aria-label="GBA Logistics, inicio"><img src="/_blob/3612b8ec6be8b1722e93dc8c4f5f1f95" alt="GBA Logistics" style="height:44px;width:auto;display:block"></a>
+<nav class="nav-links" aria-label="Principal" style="font-size:15px;font-weight:500">
+<a href="#servicios">Servicios</a>
+<a href="#cotizar-datos">Qué necesitamos</a>
+<a href="#proceso">Cómo trabajamos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
+<a class="btn hdr-cta" href="#cotizar" style="background:{{accent}};color:#0E2238;font-weight:700;padding:13px 22px;border-radius:2px;font-size:15px">Solicitar cotización</a>
+<button class="menu-btn" type="button" onClick="{{toggleMenu}}" aria-label="Abrir o cerrar el menú" style="align-items:center;gap:10px;background:transparent;color:#fff;border:1.5px solid #8FA5C2;border-radius:2px;padding:0 16px;min-height:44px;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+<span>Menú</span>
+</button>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<nav class="mobile-menu" aria-label="Menú" style="border-top:1px solid #3A5A84">
+<div class="wrap" style="display:flex;flex-direction:column;padding-top:6px;padding-bottom:20px;font-weight:600;font-size:16px">
+<a href="#servicios" onClick="{{closeMenu}}" style="padding:15px 0;border-bottom:1px solid #2F5078">Servicios</a>
+<a href="#cotizar-datos" onClick="{{closeMenu}}" style="padding:15px 0;border-bottom:1px solid #2F5078">Qué necesitamos para cotizar</a>
+<a href="#proceso" onClick="{{closeMenu}}" style="padding:15px 0;border-bottom:1px solid #2F5078">Cómo trabajamos</a>
+<a href="#nosotros" onClick="{{closeMenu}}" style="padding:15px 0;border-bottom:1px solid #2F5078">Nosotros</a>
+<a href="#contacto" onClick="{{closeMenu}}" style="padding:15px 0;border-bottom:1px solid #2F5078">Contacto</a>
+<a class="btn" href="#cotizar" onClick="{{closeMenu}}" style="margin-top:18px;background:{{accent}};color:#0E2238;text-align:center;font-weight:700;padding:15px;border-radius:2px">Solicitar cotización</a>
+</div>
+</nav>
+</sc-if>
+</header>
+
+<!-- Hero -->
+<section style="background:#203D60;color:#fff;position:relative;overflow:hidden">
+<div class="hero-photo">
+<img src="/_blob/0a813ceb4a789b477d9a364585dc4cdb" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,61,96,0.92),rgba(32,61,96,0.5))"></div>
+</div>
+<div class="wrap sec" style="position:relative;padding-top:84px;padding-bottom:92px">
+<div class="hero-grid">
+<div>
+<p style="margin:0 0 20px;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7FD36F">Empresa venezolana de logística integral</p>
+<h1 class="h1" style="margin:0;font-weight:300;font-size:56px;line-height:1.06;letter-spacing:-1px">Logística internacional que te ahorra <strong style="font-weight:700;color:{{accent}}">tiempo, dinero y molestias</strong></h1>
+<p style="margin:28px 0 0;font-size:18px;line-height:1.65;font-weight:300;color:#E3EAF3;max-width:540px">Nos ocupamos de todo: desde el retiro en fábrica hasta la entrega en tu almacén o punto de distribución. Tú te concentras en tu negocio.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
+<a class="btn" href="#cotizar" style="background:{{accent}};color:#0E2238;font-weight:700;font-size:16px;padding:16px 28px;border-radius:2px">Solicitar cotización</a>
+<a class="btn" href="#cotizar-datos" style="border:1.5px solid #8FA5C2;color:#fff;font-weight:600;font-size:16px;padding:14.5px 28px;border-radius:2px">¿Qué datos necesito enviar?</a>
+</div>
+<p style="margin:44px 0 0;font-size:18px;font-weight:300;font-style:italic;color:#D8E1ED;padding-top:18px;border-top:1px solid #4A6A92;display:inline-block">Nuestro éxito se basa en tu éxito</p>
+</div>
+
+<!-- Quote card -->
+<div id="cotizar" class="card-pad" style="background:#fff;color:#3C3C3B;border-radius:2px;border-top:6px solid #3AAE2D;padding:32px">
+<h2 style="margin:0 0 6px;font-size:24px;font-weight:700;color:#203D60">Cotiza tu envío</h2>
+<p style="margin:0 0 20px;font-size:14px;line-height:1.5;color:#55616B">Completa lo básico y se abrirá tu correo con la solicitud lista para enviar. [TIEMPO DE RESPUESTA]</p>
+<div class="seg" style="display:flex;gap:0;flex-wrap:wrap;margin-bottom:20px;border:1.5px solid #203D60;border-radius:2px;overflow:hidden">
+<sc-for list="{{qmodes}}" as="m" hint-placeholder-count="4">
+<button type="button" onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
+</sc-for>
+</div>
+<div class="two">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-origen" style="font-size:13px;font-weight:600">Origen</label>
+<input id="f-origen" type="text" value="{{origin}}" onChange="{{setOrigin}}" placeholder="Ciudad o país" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-destino" style="font-size:13px;font-weight:600">Destino</label>
+<input id="f-destino" type="text" value="{{dest}}" onChange="{{setDest}}" placeholder="Ciudad o puerto" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:14px">
+<label for="f-carga" style="font-size:13px;font-weight:600">¿Qué vas a enviar?</label>
+<input id="f-carga" type="text" value="{{cargo}}" onChange="{{setCargo}}" placeholder="Mercancía, peso y medidas aproximadas" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit">
+</div>
+<button type="button" onClick="{{toggleMore}}" style="margin-top:18px;width:100%;display:flex;justify-content:space-between;align-items:center;background:#F3F6FA;border:1.5px solid #C5D2E4;border-radius:2px;padding:0 16px;min-height:48px;font-family:inherit;font-size:15px;font-weight:700;color:#203D60;cursor:pointer"><span>{{moreLabel}}</span><span style="font-size:24px;line-height:1">{{moreSign}}</span></button>
+<sc-if value="{{showMore}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:16px;display:flex;flex-direction:column;gap:14px">
+<div class="two">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-peso" style="font-size:13px;font-weight:600">Peso bruto total (kg)</label>
+<input id="f-peso" type="text" value="{{weight}}" onChange="{{setWeight}}" placeholder="Ej.: 1200" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-bultos" style="font-size:13px;font-weight:600">Cantidad de bultos</label>
+<input id="f-bultos" type="text" value="{{packages}}" onChange="{{setPackages}}" placeholder="Cajas, pallets o piezas" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+</div>
+<div class="two">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-medidas" style="font-size:13px;font-weight:600">Medidas por bulto</label>
+<input id="f-medidas" type="text" value="{{dims}}" onChange="{{setDims}}" placeholder="Largo × ancho × alto (cm)" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-embalaje" style="font-size:13px;font-weight:600">Tipo de embalaje</label>
+<input id="f-embalaje" type="text" value="{{packaging}}" onChange="{{setPackaging}}" placeholder="Cajas, pallets, sacos…" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+</div>
+<div class="two">
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-valor" style="font-size:13px;font-weight:600">Valor de la mercancía (USD)</label>
+<input id="f-valor" type="text" value="{{value}}" onChange="{{setValue}}" placeholder="Según factura o proforma" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-lista" style="font-size:13px;font-weight:600">Fecha en que está lista</label>
+<input id="f-lista" type="text" value="{{ready}}" onChange="{{setReady}}" placeholder="Fecha aproximada" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit;min-width:0">
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-modo" style="font-size:13px;font-weight:600">{{modeLabel}}</label>
+<input id="f-modo" type="text" value="{{modeVal}}" onChange="{{setModeVal}}" placeholder="{{modePh}}" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit">
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="f-quien" style="font-size:13px;font-weight:600">Nombre y empresa</label>
+<input id="f-quien" type="text" value="{{who}}" onChange="{{setWho}}" placeholder="Nombre, empresa y RIF" style="border:1.5px solid #B6C4CB;border-radius:2px;padding:13px 14px;font-size:16px;font-family:inherit">
+</div>
+</div>
+</sc-if>
+<a class="btn" href="{{quoteHref}}" style="display:block;box-sizing:border-box;margin-top:20px;background:{{accent}};color:#0E2238;font-weight:700;font-size:16px;padding:16px;text-align:center;border-radius:2px">Pedir cotización por correo</a>
+<p style="margin:14px 0 0;font-size:12.5px;line-height:1.5;color:#55616B;text-align:center">Para cotizar con precisión, <a href="#cotizar-datos" style="color:#2E5FA8;font-weight:600;text-decoration:underline">mira todos los datos que necesitamos</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benefits strip -->
+<section style="background:#fff;border-bottom:1px solid #E3E8EE">
+<div class="wrap" style="padding-top:44px;padding-bottom:48px">
+<p style="margin:0 0 28px;font-size:20px;line-height:1.5;font-weight:300;color:#3C3C3B">Mientras tú te concentras en tu negocio y lo llevas a nuevos mercados, <strong style="font-weight:700;color:#277D1D">nosotros nos encargamos de:</strong></p>
+<div class="grid4" style="gap:28px 32px">
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span style="flex:none;width:28px;height:28px;background:#4777BB;border-radius:2px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+<p style="margin:0;font-size:15px;line-height:1.5;font-weight:500">Agilizar tus procesos de comercio internacional y ahorrarte tiempo y dinero</p>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span style="flex:none;width:28px;height:28px;background:#4777BB;border-radius:2px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+<p style="margin:0;font-size:15px;line-height:1.5;font-weight:500">Ayudarte a tomar decisiones con fundamento para mejorar tus procesos</p>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span style="flex:none;width:28px;height:28px;background:#4777BB;border-radius:2px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+<p style="margin:0;font-size:15px;line-height:1.5;font-weight:500">Gestionar tu cadena de suministros con calidad y transparencia</p>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span style="flex:none;width:28px;height:28px;background:#4777BB;border-radius:2px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+<p style="margin:0;font-size:15px;line-height:1.5;font-weight:500">Darte atención personalizada y de calidad en cada operación</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section id="servicios" class="sec" style="padding:104px 0 96px">
+<div class="wrap">
+<div style="max-width:720px">
+<h2 class="h2" style="margin:0;font-weight:300;font-size:42px;line-height:1.12;letter-spacing:-0.5px">Nuestros <strong style="font-weight:700;color:#277D1D">Servicios</strong></h2>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.6;font-weight:300">Estamos para ayudarte en todo momento, con una amplia gama de servicios que te apoyan en cada paso del proceso logístico.</p>
+</div>
+
+<!-- Logística Internacional -->
+<div style="margin-top:48px;background:#203D60;color:#fff;position:relative;overflow:hidden;border-radius:2px">
+<div class="log-top">
+<div class="log-pad" style="padding:48px 40px 40px 48px">
+<h3 style="margin:0;font-size:34px;font-weight:700;line-height:1.15"><span style="color:#3AAE2D">Logística</span> Internacional</h3>
+<p style="margin:20px 0 0;font-size:16.5px;line-height:1.7;font-weight:300;color:#E3EAF3">Transportamos tu carga desde cualquier lugar del mundo hasta su destino final, de manera segura y confiable. Con alianzas estratégicas a nivel local e internacional, gestionamos importación, exportación y distribución, desde la planta hasta la entrega, de la manera más eficaz y al menor costo posible.</p>
+</div>
+<div class="log-photo">
+<img src="/_blob/02a0f0c786cf7ad9e2c86d4e68391db6" alt="Buque portacontenedores en puerto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<div style="position:absolute;inset:0;background:rgba(32,61,96,0.25)"></div>
+</div>
+</div>
+<div class="log-tiles" style="padding:0 48px 48px">
+<p style="margin:0 0 18px;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7FD36F">Elige cómo mover tu carga</p>
+<div class="grid4">
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><rect x="2" y="6" width="20" height="12"/><path d="M6 6v12M10 6v12M14 6v12M18 6v12"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Marítimo FCL</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Contenedor completo para tu carga. Ideal para grandes volúmenes.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M3 21v-8h8v8z"/><path d="M13 21V9h8v12z"/><path d="M7 13V5h8v4"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Marítimo LCL</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Carga consolidada: pagas solo el espacio que ocupa tu mercancía.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Aéreo</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Para carga urgente o de alto valor que no puede esperar.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Terrestre</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Transporte por carretera, de la recogida a tu destino.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Multimodal</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Combinamos varios modos de transporte en una sola operación.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Puerta a puerta</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Recogemos en origen y entregamos en tu dirección.</p>
+</div>
+<div class="tile" style="background:#2C4F7C;padding:26px 24px;min-height:150px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+<h4 style="margin:16px 0 6px;font-size:17px;font-weight:700">Courier</h4>
+<p style="margin:0;font-size:14px;line-height:1.55;font-weight:300;color:#E3EAF3">Paquetes y envíos pequeños con entrega rápida.</p>
+</div>
+<a class="btn" href="#cotizar" style="background:{{accent}};color:#0E2238;padding:26px 24px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;box-sizing:border-box">
+<span style="font-size:17px;font-weight:700;line-height:1.35">¿No sabes cuál elegir? Te ayudamos a decidir.</span>
+<span style="font-size:15px;font-weight:700">Solicitar cotización →</span>
+</a>
+</div>
+</div>
+<img src="/_blob/43a150b7d1a1e033481d3a20112437b7" alt="" style="position:absolute;right:20px;top:20px;width:44px;opacity:0.85">
+</div>
+
+<!-- Other services -->
+<div class="grid3" style="margin-top:32px">
+<div style="background:#fff;border-top:5px solid #3AAE2D;padding:36px 32px 40px">
+<span style="display:flex;width:52px;height:52px;background:#3AAE2D;border-radius:4px;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></span>
+<h3 style="margin:22px 0 0;font-size:22px;font-weight:700;color:#203D60;line-height:1.2">Seguro de Carga Internacional</h3>
+<p style="margin:14px 0 0;font-size:15px;font-weight:700;color:#277D1D">Más vale estar prevenidos.</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.65">Integramos el seguro para el transporte de carga internacional a un precio asequible. Ofrecemos pólizas para que tu carga viaje segura y confiable, y minimizar así los riesgos de tu cadena de suministros.</p>
+</div>
+<div style="background:#fff;border-top:5px solid #4777BB;padding:36px 32px 40px">
+<span style="display:flex;width:52px;height:52px;background:#4777BB;border-radius:4px;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
+<h3 style="margin:22px 0 0;font-size:22px;font-weight:700;color:#203D60;line-height:1.2">Agenciamiento de Aduanas</h3>
+<p style="margin:14px 0 0;font-size:15px;line-height:1.65">Llevamos los procesos legales ante la Administración Aduanera para ingresar y enviar tu mercancía. Gestionamos:</p>
+<ul style="margin:14px 0 0;padding:0;list-style:none;font-size:15px;font-weight:600;color:#203D60">
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Operaciones regulares</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Ingreso a zona franca (In-bond)</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Tránsito aduanero internacional</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Cálculo de impuestos</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Permisología requerida</li>
+</ul>
+</div>
+<div style="background:#fff;border-top:5px solid #3AAE2D;padding:36px 32px 40px">
+<span style="display:flex;width:52px;height:52px;background:#3AAE2D;border-radius:4px;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+<h3 style="margin:22px 0 0;font-size:22px;font-weight:700;color:#203D60;line-height:1.2">Asesoría Especializada</h3>
+<p style="margin:14px 0 0;font-size:15px;line-height:1.65">Te asesoramos en tus propuestas de exportación, importación y logística internacional, con planes de trabajo personalizados. Incluye:</p>
+<ul style="margin:14px 0 0;padding:0;list-style:none;font-size:15px;font-weight:600;color:#203D60">
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Clasificación arancelaria</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Estudios de mercado</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Búsqueda de proveedores y clientes</li>
+<li style="padding:9px 0;border-top:1px solid #E3E8EE">Revisión de tus procesos logísticos y distribución</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- What we need to quote -->
+<section id="cotizar-datos" class="sec" style="background:#fff;padding:104px 0">
+<div class="wrap">
+<div style="max-width:760px">
+<h2 class="h2" style="margin:0;font-weight:300;font-size:42px;line-height:1.12;letter-spacing:-0.5px">¿Qué datos necesitamos para <strong style="font-weight:700;color:#277D1D">cotizar tu carga?</strong></h2>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.6;font-weight:300">Mientras más completa sea tu información, más rápida y precisa será la cotización. Si aún no tienes todos los datos, envíanos lo que tengas y te ayudamos a completar el resto. Son los mismos campos del formulario de arriba.</p>
+</div>
+
+<h3 style="margin:56px 0 8px;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#203D60">Imprescindibles</h3>
+<div class="spec" style="border-top:3px solid #203D60">
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">1</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Origen y destino</h4><p style="margin:0;font-size:15px;line-height:1.55">Ciudad y país, y el puerto o aeropuerto si lo conoces. Para puerta a puerta, la dirección de recogida y de entrega.</p></div>
+</div>
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">2</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Qué vas a enviar</h4><p style="margin:0;font-size:15px;line-height:1.55">Descripción clara de la mercancía: qué es, de qué material está hecha y para qué se usa. Si la tienes, la partida arancelaria (código HS).</p></div>
+</div>
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">3</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Peso y cantidad de bultos</h4><p style="margin:0;font-size:15px;line-height:1.55">Peso bruto total en kilos y número de bultos, cajas o pallets.</p></div>
+</div>
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">4</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Medidas y tipo de embalaje</h4><p style="margin:0;font-size:15px;line-height:1.55">Largo × ancho × alto de cada bulto, y si va en cajas, pallets, sacos, tambores o piezas sueltas.</p></div>
+</div>
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">5</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Valor de la mercancía</h4><p style="margin:0;font-size:15px;line-height:1.55">El valor según factura comercial o proforma (en USD). Lo usamos para el seguro y para calcular los impuestos de aduana.</p></div>
+</div>
+<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #D5DEE6">
+<span style="flex:none;width:36px;font-size:30px;font-weight:700;color:#4777BB;line-height:1">6</span>
+<div><h4 style="margin:0 0 6px;font-size:17px;font-weight:700;color:#203D60">Cuándo está lista</h4><p style="margin:0;font-size:15px;line-height:1.55">La fecha en que el proveedor tiene la carga lista y, si hay urgencia, la fecha límite en la que la necesitas en destino.</p></div>
+</div>
+</div>
+
+<h3 style="margin:56px 0 8px;font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#277D1D">Nos ayudan a cotizar mejor</h3>
+<div class="spec" style="border-top:3px solid #3AAE2D">
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Condición de entrega (Incoterm)</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">La acordada con tu proveedor: EXW, FOB, CIF u otra. Define qué parte del transporte nos toca coordinar.</p>
+</div>
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Datos del proveedor</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">Nombre, ubicación y contacto de quien entrega la carga, para coordinar la recogida.</p>
+</div>
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Servicios adicionales</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">Si necesitas agenciamiento de aduanas, seguro de carga o entrega en tu dirección, inclúyelo en la misma cotización.</p>
+</div>
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Cargas especiales</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">Avísanos si es peligrosa, refrigerada, frágil, sobredimensionada o de alto valor, para pedir las condiciones y documentos correctos.</p>
+</div>
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Documentos disponibles</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">Factura comercial o proforma, lista de empaque (packing list) y, si aplica, ficha técnica o MSDS.</p>
+</div>
+<div style="padding:20px 0;border-bottom:1px solid #D5DEE6">
+<h4 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#203D60">Tus datos de contacto</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">Nombre, empresa, RIF y teléfono. Tu correo ya lo recibimos al escribirnos.</p>
+</div>
+</div>
+
+<div class="band" style="margin-top:56px;background:#EEF2F8;padding:36px 40px">
+<h3 style="margin:0 0 6px;font-size:22px;font-weight:700;color:#203D60">Según el tipo de envío, añade:</h3>
+<p style="margin:0 0 22px;font-size:15px;color:#55616B">Elige tu modo de transporte para ver el dato extra que cambia la tarifa.</p>
+<div class="seg" style="display:flex;gap:0;flex-wrap:wrap;margin-bottom:28px;border:1.5px solid #203D60;border-radius:2px;overflow:hidden;width:fit-content;max-width:100%">
+<sc-for list="{{cmodes}}" as="c" hint-placeholder-count="4">
+<button type="button" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+</div>
+<div class="grid3" style="gap:0">
+<sc-for list="{{extras}}" as="x" hint-placeholder-count="3">
+<div class="extra" style="padding:4px 32px 4px 0;margin-right:32px;border-right:1px solid #C5D2E4">
+<h4 style="margin:0 0 8px;font-size:16px;font-weight:700;color:#203D60">{{x.title}}</h4>
+<p style="margin:0;font-size:15px;line-height:1.55">{{x.text}}</p>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div class="band" style="margin-top:40px;background:#203D60;color:#fff;padding:36px 44px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;border-radius:2px">
+<div style="max-width:560px">
+<h3 style="margin:0 0 8px;font-size:24px;font-weight:700">¿Listo para cotizar?</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:300;color:#E3EAF3">Completa el formulario con lo que tengas. Se abre tu correo con todo listo para enviar a sales@gbalogistic.com.</p>
+</div>
+<a class="btn" href="#cotizar" onClick="{{openDetails}}" style="background:{{accent}};color:#0E2238;font-weight:700;font-size:16px;padding:16px 28px;border-radius:2px">Ir al formulario</a>
+</div>
+</div>
+</section>
+
+<!-- Process -->
+<section id="proceso" class="sec" style="padding:104px 0 96px">
+<div class="wrap">
+<h2 class="h2" style="margin:0;font-weight:300;font-size:42px;line-height:1.12;letter-spacing:-0.5px;max-width:720px">De tu solicitud a la entrega, <strong style="font-weight:700;color:#277D1D">en cuatro pasos</strong></h2>
+<div class="chev-row" style="margin-top:52px">
+<div class="chev chev-first" style="background:#203D60;color:#fff">
+<span style="font-size:14px;font-weight:700;letter-spacing:0.14em;color:#7FD36F">PASO 1</span>
+<h3 style="margin:10px 0 10px;font-size:19px;font-weight:700">Nos cuentas qué envías</h3>
+<p style="margin:0;font-size:14.5px;line-height:1.6;font-weight:300;color:#E3EAF3">Con los datos de arriba, por el formulario o por correo.</p>
+</div>
+<div class="chev" style="background:#2C4F7C;color:#fff">
+<span style="font-size:14px;font-weight:700;letter-spacing:0.14em;color:#7FD36F">PASO 2</span>
+<h3 style="margin:10px 0 10px;font-size:19px;font-weight:700">Recibes tu cotización</h3>
+<p style="margin:0;font-size:14.5px;line-height:1.6;font-weight:300;color:#E3EAF3">Comparamos tarifas con transportistas y aliados, y te enviamos una propuesta clara.</p>
+</div>
+<div class="chev" style="background:#3A639D;color:#fff">
+<span style="font-size:14px;font-weight:700;letter-spacing:0.14em;color:#CFF2C9">PASO 3</span>
+<h3 style="margin:10px 0 10px;font-size:19px;font-weight:700">Aprobamos y operamos</h3>
+<p style="margin:0;font-size:14.5px;line-height:1.6;font-weight:400;color:#fff">Con tu visto bueno, coordinamos la recogida, el transporte y los trámites de aduana.</p>
+</div>
+<div class="chev" style="background:#3AAE2D;color:#0E2238">
+<span style="font-size:14px;font-weight:700;letter-spacing:0.14em">PASO 4</span>
+<h3 style="margin:10px 0 10px;font-size:19px;font-weight:700">Entregamos y te informamos</h3>
+<p style="margin:0;font-size:14.5px;line-height:1.6;font-weight:500">Te mantenemos al tanto hasta que la carga llega a su destino.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section id="nosotros" style="background:#203D60;color:#fff;overflow:hidden;position:relative">
+<div class="wrap" style="padding-top:0;padding-bottom:0">
+<div class="grid2" style="gap:0;align-items:stretch">
+<div class="about-text" style="padding:96px 56px 96px 0">
+<h2 class="h2" style="margin:0;font-weight:300;font-size:42px;line-height:1.12">¿Quiénes <strong style="font-weight:700;color:#3AAE2D">somos?</strong></h2>
+<p style="margin:26px 0 0;font-size:17px;line-height:1.7;font-weight:300;color:#E3EAF3">En <strong style="font-weight:700;color:#7FD36F">GBA Logistics</strong> somos una empresa venezolana dedicada a prestar servicios de logística internacional, especializados en el transporte internacional de carga desde cualquier lugar del mundo.</p>
+<p style="margin:18px 0 0;font-size:17px;line-height:1.7;font-weight:300;color:#E3EAF3">Nos ocupamos de todos los aspectos de tus necesidades logísticas, desde el retiro en fábrica hasta la entrega en almacenes o puntos de distribución, para que puedas concentrarte en tu <em>core business</em>.</p>
+<p style="margin:30px 0 0;font-size:19px;line-height:1.4;font-weight:600;padding-bottom:10px;border-bottom:2px solid #fff;display:inline-block">Buscamos ahorrarte tiempo, dinero y molestias.</p>
+</div>
+<div class="about-photo" style="position:relative;min-height:420px">
+<img src="/_blob/8b6b728ecf14f81479c5df846f541e92" alt="Dos trabajadores se dan la mano frente a un contenedor abierto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)">
+</div>
+</div>
+</div>
+<img src="/_blob/43a150b7d1a1e033481d3a20112437b7" alt="" style="position:absolute;right:32px;bottom:24px;width:52px">
+</section>
+
+<!-- Mission / Vision -->
+<section class="sec" style="padding:96px 0">
+<div class="wrap">
+<div class="mv-wrap">
+<div class="mv-a" style="background:#4777BB;color:#fff">
+<p style="margin:0;font-size:16px;font-weight:400">Nuestra</p>
+<h3 style="margin:2px 0 16px;font-size:36px;font-weight:700">Misión</h3>
+<p style="margin:0;font-size:18px;line-height:1.65;font-weight:500">Mejorar la experiencia de los procesos logísticos por medio de un servicio confiable y de calidad.</p>
+</div>
+<div class="mv-b" style="background:#3AAE2D;color:#0E2238">
+<p style="margin:0;font-size:16px;font-weight:500">Nuestra</p>
+<h3 style="margin:2px 0 16px;font-size:36px;font-weight:700">Visión</h3>
+<p style="margin:0;font-size:18px;line-height:1.65;font-weight:500">Ser el aliado comercial por excelencia, brindando tranquilidad y seguridad en la planificación de operaciones logísticas, consolidando relaciones duraderas.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Clients placeholder -->
+<section class="sec" style="background:#fff;padding:88px 0">
+<div class="wrap">
+<h2 class="h2" style="margin:0 0 36px;font-weight:300;font-size:36px;line-height:1.15">Lo que dicen <strong style="font-weight:700;color:#277D1D">nuestros clientes</strong></h2>
+<div class="grid3">
+<figure style="margin:0;border-top:3px solid #203D60;padding:24px 0 0">
+<blockquote style="margin:0 0 18px;font-size:17px;line-height:1.6;color:#55616B">[Testimonio real: qué enviaba el cliente, qué problema tenía y qué resultado obtuvo]</blockquote>
+<figcaption style="font-weight:700;font-size:15px;color:#203D60">[Nombre, cargo, empresa]</figcaption>
+</figure>
+<figure style="margin:0;border-top:3px solid #203D60;padding:24px 0 0">
+<blockquote style="margin:0 0 18px;font-size:17px;line-height:1.6;color:#55616B">[Testimonio real de un cliente]</blockquote>
+<figcaption style="font-weight:700;font-size:15px;color:#203D60">[Nombre, cargo, empresa]</figcaption>
+</figure>
+<figure style="margin:0;border-top:3px solid #203D60;padding:24px 0 0">
+<blockquote style="margin:0 0 18px;font-size:17px;line-height:1.6;color:#55616B">[Testimonio real de un cliente]</blockquote>
+<figcaption style="font-weight:700;font-size:15px;color:#203D60">[Nombre, cargo, empresa]</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contacto" style="background:#203D60;color:#fff;position:relative;overflow:hidden">
+<img src="/_blob/02a0f0c786cf7ad9e2c86d4e68391db6" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.16">
+<div class="wrap sec" style="position:relative;padding-top:96px;padding-bottom:96px">
+<div class="grid2">
+<div>
+<p style="margin:0;font-size:18px;font-weight:300;color:#D8E1ED">No esperes más</p>
+<h2 class="h2" style="margin:6px 0 0;font-weight:700;font-size:46px;line-height:1.1;color:#3AAE2D;padding-bottom:14px;border-bottom:3px solid #3AAE2D;display:inline-block">¡Contáctanos!</h2>
+<p style="margin:28px 0 0;font-size:19px;line-height:1.6;font-weight:300;color:#E3EAF3;max-width:480px">Envíanos un correo hoy mismo para cotizar o agendar una cita.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px">
+<a class="btn" href="mailto:sales@gbalogistic.com" style="background:{{accent}};color:#0E2238;font-weight:700;font-size:16px;padding:16px 28px;border-radius:2px">Escríbenos por correo</a>
+<a class="btn" href="#cotizar-datos" style="border:1.5px solid #8FA5C2;color:#fff;font-weight:600;font-size:16px;padding:14.5px 28px;border-radius:2px">Qué datos enviar</a>
+</div>
+</div>
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:30px">
+<li style="display:flex;gap:18px;align-items:center">
+<span style="flex:none;width:56px;height:56px;border-radius:4px;background:#4777BB;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg></span>
+<div style="min-width:0"><div style="font-weight:700;font-size:17px">Correo</div><a href="mailto:sales@gbalogistic.com" style="font-weight:300;font-size:17px;color:#E3EAF3;overflow-wrap:anywhere">sales@gbalogistic.com</a></div>
+</li>
+<li style="display:flex;gap:18px;align-items:center">
+<span style="flex:none;width:56px;height:56px;border-radius:4px;background:#3AAE2D;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E2238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+<div><div style="font-weight:700;font-size:17px">Ubicación</div><span style="font-weight:300;font-size:17px;color:#E3EAF3">Caracas, Venezuela</span></div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#162C47;color:#B9C7DA;padding:56px 0 32px;font-size:14px">
+<div class="wrap">
+<div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap">
+<div style="max-width:320px">
+<img src="/_blob/3612b8ec6be8b1722e93dc8c4f5f1f95" alt="GBA Logistics" style="height:44px;width:auto;display:block">
+<p style="margin:18px 0 0;line-height:1.6">Nuestro éxito se basa en tu éxito.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<span style="color:#fff;font-weight:600">Servicios</span>
+<a href="#servicios">Logística internacional</a><a href="#servicios">Seguro de carga</a><a href="#servicios">Agenciamiento de aduanas</a><a href="#servicios">Asesoría especializada</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<span style="color:#fff;font-weight:600">En esta página</span>
+<a href="#cotizar-datos">Qué necesitamos para cotizar</a><a href="#proceso">Cómo trabajamos</a><a href="#nosotros">Quiénes somos</a><a href="#contacto">Contacto</a>
+</div>
+</div>
+<div style="margin-top:40px;padding-top:24px;border-top:1px solid #2C4A6E;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+<span>GBA Logistics, C.A. © 2026. RIF: J-50138099-6</span>
+<img src="/_blob/01d0c4c4fdf6c52ddf599bf40676bf7b" alt="" style="height:26px;width:auto">
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#3AAE2D","options":["#3AAE2D","#4777BB","#F2A33A"]},"$preview":{"width":1440,"height":6400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      qmode: 'Marítimo', cmode: 'fcl', menuOpen: false, showMore: false,
+      origin: '', dest: '', cargo: '', weight: '', packages: '', dims: '', packaging: '',
+      value: '', ready: '', modeVal: '', who: ''
+    };
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#3AAE2D';
+    const seg = (on) =>
+      'font-family:inherit;font-size:14px;font-weight:600;padding:12px 18px;cursor:pointer;min-height:44px;border:0;border-radius:0;' +
+      (on ? 'background:#203D60;color:#fff;' : 'background:#fff;color:#203D60;');
+
+    const qLabels = ['Marítimo', 'Aéreo', 'Terrestre', 'Multimodal'];
+    const qmodes = qLabels.map((label) => ({
+      label,
+      pick: () => this.setState({ qmode: label }),
+      style: seg(this.state.qmode === label)
+    }));
+
+    const cdata = {
+      fcl: { label: 'Marítimo · FCL', items: [
+        { title: 'Tipo y cantidad de contenedores', text: "20', 40' o 40' HC, y cuántos necesitas." },
+        { title: 'Peso por contenedor', text: 'El peso aproximado de la carga que irá en cada uno.' },
+        { title: 'Estado de la carga', text: 'Si ya está lista para cargar en origen o hay que consolidarla antes.' } ] },
+      lcl: { label: 'Marítimo · LCL', items: [
+        { title: 'Volumen total', text: 'En metros cúbicos (m³), calculado con las medidas de cada bulto.' },
+        { title: 'Cantidad de bultos o pallets', text: 'Y si pueden apilarse unos sobre otros o no.' },
+        { title: 'Peso bruto total', text: 'En kilos, junto con el peso de los bultos más pesados.' } ] },
+      air: { label: 'Aéreo', items: [
+        { title: 'Medidas exactas por bulto', text: 'La tarifa aérea se calcula con el mayor entre el peso real y el peso volumétrico.' },
+        { title: 'Urgencia', text: 'La fecha límite de llegada, para elegir entre opciones directas o con escala.' },
+        { title: 'Productos restringidos', text: 'Avísanos si incluye baterías, líquidos, polvos o artículos regulados.' } ] },
+      road: { label: 'Terrestre', items: [
+        { title: 'Direcciones exactas', text: 'De recogida y de entrega, con persona de contacto en cada punto.' },
+        { title: 'Tipo de vehículo', text: 'Furgón, camión u otro, si ya sabes cuál necesita tu carga.' },
+        { title: 'Horarios de carga y descarga', text: 'Y cualquier restricción de acceso en los puntos de entrega.' } ] }
+    };
+    const cmodes = Object.keys(cdata).map((k) => ({
+      label: cdata[k].label,
+      pick: () => this.setState({ cmode: k }),
+      style: seg(this.state.cmode === k)
+    }));
+
+    const s = this.state;
+    const modeField = {
+      'Marítimo': ['Contenedor o volumen', "FCL: 20', 40' o 40' HC · LCL: m³"],
+      'Aéreo': ['Urgencia', 'Fecha límite de llegada, o sin prisa'],
+      'Terrestre': ['Direcciones', 'Recogida y entrega, con contacto'],
+      'Multimodal': ['Tramos o modos a combinar', 'Ej.: marítimo + terrestre hasta tu almacén']
+    }[s.qmode];
+    const body = [
+      'Modo de transporte: ' + s.qmode,
+      'Origen: ' + s.origin,
+      'Destino: ' + s.dest,
+      'Mercancía: ' + s.cargo,
+      '',
+      'Peso bruto total (kg): ' + s.weight,
+      'Cantidad de bultos: ' + s.packages,
+      'Medidas por bulto (largo x ancho x alto): ' + s.dims,
+      'Tipo de embalaje: ' + s.packaging,
+      'Valor de la mercancía (USD): ' + s.value,
+      'Fecha en que está lista: ' + s.ready,
+      modeField[0] + ': ' + s.modeVal,
+      '',
+      'Nombre, empresa y RIF: ' + s.who
+    ].join('\n');
+    const h = (k) => (e) => this.setState({ [k]: e.target.value });
+    const quoteHref = 'mailto:sales@gbalogistic.com?subject=' + encodeURIComponent('Solicitud de cotización') + '&body=' + encodeURIComponent(body);
+
+    return {
+      accent, qmodes, cmodes, extras: cdata[s.cmode].items,
+      menuOpen: s.menuOpen,
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      origin: s.origin, dest: s.dest, cargo: s.cargo,
+      setOrigin: (e) => this.setState({ origin: e.target.value }),
+      setDest: (e) => this.setState({ dest: e.target.value }),
+      setCargo: (e) => this.setState({ cargo: e.target.value }),
+      quoteHref,
+      showMore: s.showMore,
+      moreLabel: s.showMore ? 'Ocultar detalles' : 'Añadir más detalles (recomendado)',
+      moreSign: s.showMore ? '−' : '+',
+      toggleMore: () => this.setState({ showMore: !this.state.showMore }),
+      openDetails: () => this.setState({ showMore: true }),
+      modeLabel: modeField[0], modePh: modeField[1],
+      weight: s.weight, packages: s.packages, dims: s.dims, packaging: s.packaging,
+      value: s.value, ready: s.ready, modeVal: s.modeVal, who: s.who,
+      setWeight: h('weight'), setPackages: h('packages'), setDims: h('dims'), setPackaging: h('packaging'),
+      setValue: h('value'), setReady: h('ready'), setModeVal: h('modeVal'), setWho: h('who')
+    };
+  }
+}
+</script>
+</body>
+</html>

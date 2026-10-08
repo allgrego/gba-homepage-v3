@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-navy: #203d60;
+  --color-navy-deep: #162c47;
+  --color-navy-tile: #2c4f7c;
+  --color-navy-tile-hover: #355b8c;
+  --color-blue: #4777bb;
+  --color-blue-step: #3a639d;
+  --color-green: #3aae2d;
+  --color-green-text: #277d1d;
+  --color-green-light: #7fd36f;
+  --color-ink: #0e2238;
+  --color-offwhite: #f9f9f9;
+  --color-body: #3c3c3b;
+  --color-muted: #55616b;
+  --color-tint: #eef2f8;
+  --color-rule: #d5dee6;
+  --color-rule-soft: #e3e8ee;
+
+  --font-sans: var(--font-montserrat), sans-serif;
+
+  /* Design breakpoints: tablet is <= 980px, phone is <= 560px */
+  --breakpoint-sm: 561px;
+  --breakpoint-lg: 981px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-offwhite);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .wrap {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+  @media (min-width: 561px) {
+    .wrap {
+      padding-inline: 32px;
+    }
+  }
+
+  /* Section vertical rhythm: 56 / 72 / design value on desktop */
+  .sec-pad {
+    padding-block: 56px;
+  }
+  @media (min-width: 561px) {
+    .sec-pad {
+      padding-block: 72px;
+    }
+  }
+  @media (min-width: 981px) {
+    .sec-pad {
+      padding-block: 100px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    border-radius: 2px;
+    font-weight: 700;
+    text-align: center;
+    transition: filter 0.15s;
+  }
+  .btn:hover {
+    filter: brightness(1.1);
+  }
+  .btn-primary {
+    background: var(--color-green);
+    color: var(--color-ink);
+  }
+  .btn-outline {
+    border: 1.5px solid #8fa5c2;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .field {
+    border: 1.5px solid #b6c4cb;
+    border-radius: 2px;
+    padding: 11px 14px;
+    font-size: 16px;
+    font-family: inherit;
+    min-width: 0;
+    width: 100%;
+    background: #fff;
+  }
+  .field:focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 1px;
+  }
+  .label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .seg-btn {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 18px;
+    min-height: 44px;
+    cursor: pointer;
+    background: #fff;
+    color: var(--color-navy);
+    flex: 1 1 45%;
+  }
+  .seg-btn[aria-selected="true"],
+  .seg-btn[aria-pressed="true"] {
+    background: var(--color-navy);
+    color: #fff;
+  }
+  @media (min-width: 561px) {
+    .seg-btn {
+      flex: 0 0 auto;
+    }
+  }
+
+  /* Angular cuts that echo the logo's roof shape. Desktop only. */
+  @media (min-width: 981px) {
+    .hero-photo {
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .log-photo {
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .about-photo {
+      clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .chev {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 30px) 0,
+        100% 50%,
+        calc(100% - 30px) 100%,
+        0 100%,
+        30px 50%
+      );
+      margin-left: -14px;
+    }
+    .chev-first {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 30px) 0,
+        100% 50%,
+        calc(100% - 30px) 100%,
+        0 100%
+      );
+      margin-left: 0;
+    }
+    .mv-a {
+      clip-path: polygon(0 0, 100% 0, calc(100% - 48px) 100%, 0 100%);
+    }
+    .mv-b {
+      margin-left: -48px;
+      clip-path: polygon(48px 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+/* global-not-found: both languages are in the HTML; an inline script sets data-lang from the URL
+   before first paint so only the visitor's language shows. Without JS both stay visible. */
+html[data-lang="en"] .nf-es,
+html[data-lang="es"] .nf-en {
+  display: none;
+}
+html[data-lang] .nf-en {
+  margin-top: 0;
+  padding-top: 0;
+  border: 0;
 }
