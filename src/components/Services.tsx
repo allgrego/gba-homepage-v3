@@ -121,6 +121,7 @@ export async function Services() {
           </ServiceCard>
           <ServiceCard tone="blue" icon={<ClipboardIcon />} title={t.customs.title}>
             <p className="mt-3.5 text-[15px] leading-[1.65]">{t.customs.text}</p>
+            {t.customs.note && <p className="mt-3 text-[15px] leading-[1.65]">{t.customs.note}</p>}
             <ListItems items={t.customs.items} />
           </ServiceCard>
           <ServiceCard tone="green" icon={<BulbIcon />} title={t.advisory.title}>

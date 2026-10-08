@@ -25,7 +25,7 @@
     "eyebrow": "Empresa venezolana de logística integral",
     "titleLight": "Logística internacional que te ahorra",
     "titleBold": "tiempo, dinero y molestias",
-    "text": "Nos ocupamos de todo: desde el retiro en fábrica hasta la entrega en tu almacén o punto de distribución. Tú te concentras en tu negocio.",
+    "text": "Coordinamos tu envío de principio a fin: desde el retiro en fábrica hasta la entrega en tu almacén o punto de distribución. Tú te concentras en tu negocio.",
     "primary": "Solicitar cotización",
     "secondary": "¿Qué datos necesito enviar?",
     "tagline": "Nuestro éxito se basa en tu éxito"
@@ -173,7 +173,7 @@
     "logistics": {
       "titleAccent": "Logística",
       "titleRest": "Internacional",
-      "text": "Transportamos tu carga desde cualquier lugar del mundo hasta su destino final, de manera segura y confiable. Con alianzas estratégicas a nivel local e internacional, gestionamos importación, exportación y distribución, desde la planta hasta la entrega, de la manera más eficaz y al menor costo posible.",
+      "text": "Coordinamos el transporte de tu carga desde cualquier lugar del mundo hasta su destino final, de manera segura y confiable. Con alianzas estratégicas a nivel local e internacional, gestionamos importación, exportación y distribución, desde la planta hasta la entrega, buscando la mejor combinación de eficacia y costo.",
       "photoAlt": "Buque portacontenedores en puerto",
       "kicker": "Elige cómo mover tu carga",
       "tiles": [
@@ -205,12 +205,12 @@
         {
           "id": "door",
           "title": "Puerta a puerta",
-          "text": "Recogemos en origen y entregamos en tu dirección."
+          "text": "Coordinamos tu envío desde el origen hasta tu dirección, bajo el régimen aduanero que corresponda a tu carga."
         },
         {
           "id": "courier",
           "title": "Courier",
-          "text": "Paquetes y envíos pequeños con entrega rápida."
+          "text": "Envíos pequeños y urgentes, gestionados con operadores autorizados."
         }
       ],
       "ctaText": "¿No sabes cuál elegir? Te ayudamos a decidir.",
@@ -219,11 +219,12 @@
     "insurance": {
       "title": "Seguro de Carga Internacional",
       "tagline": "Más vale estar prevenidos.",
-      "text": "Integramos el seguro para el transporte de carga internacional a un precio asequible. Ofrecemos pólizas para que tu carga viaje segura y confiable, y minimizar así los riesgos de tu cadena de suministros."
+      "text": "Integramos el seguro para el transporte de carga internacional con aseguradoras aliadas. Ofrecemos pólizas para que tu carga viaje segura y confiable, y minimizar así los riesgos de tu cadena de suministros."
     },
     "customs": {
       "title": "Agenciamiento de Aduanas",
-      "text": "Llevamos los procesos legales ante la Administración Aduanera para ingresar y enviar tu mercancía. Gestionamos:",
+      "text": "Tramitamos los procesos legales ante la Administración Aduanera para ingresar y enviar tu mercancía.",
+      "note": "Según el tipo y valor de tu carga, te indicamos si aplica courier o importación ordinaria.",
       "items": [
         "Operaciones regulares",
         "Ingreso a zona franca (In-bond)",
@@ -415,7 +416,7 @@
     "p1Before": "En ",
     "p1Strong": "GBA Logistics",
     "p1After": " somos una empresa venezolana dedicada a prestar servicios de logística internacional, especializados en el transporte internacional de carga desde cualquier lugar del mundo.",
-    "p2Before": "Nos ocupamos de todos los aspectos de tus necesidades logísticas, desde el retiro en fábrica hasta la entrega en almacenes o puntos de distribución, para que puedas concentrarte en tu ",
+    "p2Before": "Coordinamos todos los aspectos de tus necesidades logísticas, desde el retiro en fábrica hasta la entrega en almacenes o puntos de distribución, para que puedas concentrarte en tu ",
     "p2Em": "core business",
     "p2After": ".",
     "tagline": "Buscamos ahorrarte tiempo, dinero y molestias.",
