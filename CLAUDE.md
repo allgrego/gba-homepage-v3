@@ -4,6 +4,8 @@
 
 Single-page, bilingual (Spanish/English) marketing site for GBA Logistics, a Venezuelan freight forwarder (`gbalogistic.com`). Next.js 16.4 App Router, React 19, Tailwind 4, TypeScript, deployed on Vercel. No database, no CMS.
 
+This is a refactor of the currently deployed homepage and the **third version** of the site. Do not assume behavior from earlier versions; the code, `DESIGN.md` and the docs here are the source of truth.
+
 `DESIGN.md` is the brief for the approved design (brand tokens, shape language, page structure, accessibility rules). `design/Main.dc.html` is the original copy/markup reference. It is **not runnable**, read it only. `assets/` holds the original source images; the ones the site serves live in `public/images/`.
 
 ## Commands
